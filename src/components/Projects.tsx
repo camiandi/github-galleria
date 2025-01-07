@@ -4,22 +4,22 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "Ecommerce-Andino",
-      description: "A full-featured e-commerce platform built with React and Node.js",
-      githubUrl: "https://github.com/camiandi/Ecommerce-Andino",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      title: "Unreal-Engine-5",
+      description: "Collection of Unreal Engine 5 projects showcasing game development and VFX capabilities",
+      githubUrl: "https://github.com/camiandiloro/Unreal-Engine-5",
+      technologies: ["Unreal Engine 5", "C++", "Blueprints", "VFX"],
     },
     {
-      title: "Proyecto-Final-React",
-      description: "Final project showcasing advanced React concepts and best practices",
-      githubUrl: "https://github.com/camiandi/Proyecto-Final-React",
-      technologies: ["React", "Firebase", "Tailwind CSS"],
+      title: "Unity-Projects",
+      description: "Portfolio of Unity-based games and interactive experiences",
+      githubUrl: "https://github.com/camiandiloro/Unity-Projects",
+      technologies: ["Unity", "C#", "Game Development", "3D Animation"],
     },
     {
-      title: "Proyecto-Final-JS",
-      description: "JavaScript-based project demonstrating modern web development techniques",
-      githubUrl: "https://github.com/camiandi/Proyecto-Final-JS",
-      technologies: ["JavaScript", "HTML", "CSS"],
+      title: "VFX-Portfolio",
+      description: "Showcase of visual effects and animation projects using industry-standard tools",
+      githubUrl: "https://github.com/camiandiloro/VFX-Portfolio",
+      technologies: ["Houdini", "Maya", "After Effects", "Nuke"],
     },
   ];
 

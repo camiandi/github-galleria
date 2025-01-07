@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Github } from "lucide-react";
+import { Github, Star } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -10,32 +10,23 @@ interface ProjectCardProps {
   technologies: string[];
 }
 
-const ProjectCard = ({ title, description, githubUrl, demoUrl, technologies }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, githubUrl, technologies }: ProjectCardProps) => {
   return (
     <Card className="group hover:shadow-lg transition-shadow duration-300 overflow-hidden">
       <CardHeader className="space-y-1">
         <CardTitle className="text-xl flex items-center justify-between">
-          {title}
-          <div className="space-x-2">
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block hover:text-accent transition-colors"
-            >
-              <Github className="h-5 w-5" />
-            </a>
-            {demoUrl && (
-              <a
-                href={demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block hover:text-accent transition-colors"
-              >
-                <ExternalLink className="h-5 w-5" />
-              </a>
-            )}
+          <div className="flex items-center gap-2">
+            <Star className="h-5 w-5 text-yellow-400" />
+            {title}
           </div>
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block hover:text-accent transition-colors"
+          >
+            <Github className="h-5 w-5" />
+          </a>
         </CardTitle>
       </CardHeader>
       <CardContent>
