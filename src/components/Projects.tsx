@@ -4,9 +4,9 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "Unreal-Engine-5",
+      title: "The-doll-that-chose-to-drive",
       description: "Collection of Unreal Engine 5 projects showcasing game development and VFX capabilities",
-      githubUrl: "https://github.com/camiandiloro/Unreal-Engine-5",
+      githubUrl: "https://github.com/camiandiloro/The-doll-that-chose-to-drive",
       technologies: ["Unreal Engine 5", "C++", "Blueprints", "VFX"],
     },
     {
