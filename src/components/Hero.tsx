@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-primary/5 to-transparent">
       <div className="container px-4 py-16 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 animate-slide-up">
-          Camila Andino
+          Camilla Andiloro
         </h1>
         <p className="text-xl md:text-2xl text-secondary mb-8 max-w-2xl mx-auto animate-slide-up">
           Full Stack Developer passionate about creating impactful web applications
