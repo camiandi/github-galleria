@@ -7,8 +7,11 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 animate-slide-up">
           Camilla Andiloro
         </h1>
-        <p className="text-xl md:text-2xl text-secondary mb-8 max-w-2xl mx-auto animate-slide-up">
-          Full Stack Developer passionate about creating impactful web applications
+        <p className="text-xl md:text-2xl text-secondary mb-4 max-w-2xl mx-auto animate-slide-up">
+          Computer Engineer passionate about Animation, Gaming and VFX
+        </p>
+        <p className="text-lg text-secondary/80 mb-8 max-w-2xl mx-auto animate-slide-up">
+          Creating immersive digital experiences through code and creativity
         </p>
         <a
           href="#projects"
