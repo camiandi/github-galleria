@@ -5,9 +5,9 @@ const Projects = () => {
   const projects = [
     {
       title: "The-doll-that-chose-to-drive",
-      description: "Collection of Unreal Engine 5 projects showcasing game development and VFX capabilities",
+      description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course",
       githubUrl: "https://github.com/camiandiloro/The-doll-that-chose-to-drive",
-      technologies: ["Unreal Engine 5", "C++", "Blueprints", "VFX"],
+      technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
     },
     {
       title: "Unity-Projects",
@@ -24,9 +24,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-16 bg-gray-50">
+    <section id="projects" className="py-16 bg-gradient-to-b from-[#E5DEFF] to-[#FFDEE2]">
       <div className="container px-4">
-        <h2 className="text-3xl font-bold text-primary mb-12 text-center">
+        <h2 className="text-4xl font-bold text-[#8B5CF6] mb-12 text-center animate-fade-in">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
