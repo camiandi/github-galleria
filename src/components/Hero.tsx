@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#6B46C1] via-[#B829DD] to-[#DD6B20]">
+    <section className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#8B5CF6] via-[#D946EF] to-[#F97316]">
       <div className="container px-4 py-16 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-up drop-shadow-lg">
           Camilla Andiloro
@@ -15,7 +15,7 @@ const Hero = () => {
         </p>
         <a
           href="#projects"
-          className="inline-block bg-white text-[#6B46C1] px-8 py-3 rounded-lg hover:bg-white/90 transition-colors animate-fade-in shadow-lg hover:scale-105 transform duration-200"
+          className="inline-block bg-white text-[#8B5CF6] px-8 py-3 rounded-lg hover:bg-white/90 transition-colors animate-fade-in shadow-lg hover:scale-105 transform duration-200"
         >
           View My Work
         </a>
