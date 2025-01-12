@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#8B5CF6] via-[#D946EF] to-[#F97316]">
+    <section className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#9b87f5] via-[#8B5CF6] to-[#6E59A5]">
       <div className="container px-4 py-16 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-up drop-shadow-lg">
           Camilla Andiloro
