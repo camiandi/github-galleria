@@ -12,30 +12,30 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, githubUrl, technologies }: ProjectCardProps) => {
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 overflow-hidden bg-white/80 backdrop-blur-sm hover:scale-105 animate-fade-in">
+    <Card className="group hover:shadow-lg transition-all duration-300 overflow-hidden bg-[#1A1F2C]/90 backdrop-blur-sm hover:scale-105 animate-fade-in border-[#4A1B45]">
       <CardHeader className="space-y-1">
         <CardTitle className="text-xl flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Star className="h-5 w-5 text-[#F97316]" />
-            <span className="text-[#8B5CF6]">{title}</span>
+            <Star className="h-5 w-5 text-[#DD6B20]" />
+            <span className="text-[#B829DD]">{title}</span>
           </div>
           <a
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block hover:text-[#D946EF] transition-colors"
+            className="inline-block hover:text-[#DD6B20] transition-colors"
           >
-            <Github className="h-5 w-5" />
+            <Github className="h-5 w-5 text-white/80" />
           </a>
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-gray-700 mb-4">{description}</p>
+        <p className="text-white/80 mb-4">{description}</p>
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 bg-[#E5DEFF] text-[#8B5CF6] rounded-full text-sm font-medium"
+              className="px-2 py-1 bg-[#2D1B69] text-white/90 rounded-full text-sm font-medium"
             >
               {tech}
             </span>
