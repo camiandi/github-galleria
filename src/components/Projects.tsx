@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "The-doll-that-chose-to-drive",
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course",
-      githubUrl: "https://github.com/camiandiloro/The-doll-that-chose-to-drive",
+      githubUrl: "https://github.com/camiandi/The-doll-that-chose-to-drive",
       technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       title: "VFX-Portfolio",
       description: "Showcase of visual effects and animation projects using industry-standard tools",
       githubUrl: "https://github.com/camiandiloro/VFX-Portfolio",
-      technologies: ["Houdini", "Maya", "After Effects", "Nuke"],
+      technologies: ["Blender", "After Effects", "Nuke"],
     },
   ];
 
