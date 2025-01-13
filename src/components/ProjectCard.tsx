@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -11,8 +12,17 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, description, githubUrl, technologies }: ProjectCardProps) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/project/${title}`);
+  };
+
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 overflow-hidden bg-white/80 backdrop-blur-sm hover:scale-105 animate-fade-in">
+    <Card 
+      className="group hover:shadow-lg transition-all duration-300 overflow-hidden bg-white/80 backdrop-blur-sm hover:scale-105 animate-fade-in cursor-pointer"
+      onClick={handleClick}
+    >
       <CardHeader className="space-y-1">
         <CardTitle className="text-xl flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -24,6 +34,7 @@ const ProjectCard = ({ title, description, githubUrl, technologies }: ProjectCar
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block hover:text-[#D946EF] transition-colors"
+            onClick={(e) => e.stopPropagation()}
           >
             <Github className="h-5 w-5" />
           </a>
