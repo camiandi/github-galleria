@@ -38,9 +38,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-16 bg-gradient-to-b from-[#1a1f2e] to-[#2a1f2e]">
+    <section id="projects" className="py-16 bg-gradient-to-b from-background-dark to-background-darker">
       <div className="container px-4">
-        <h2 className="text-4xl font-bold text-[#8B5CF6] mb-12 text-center animate-fade-in">
+        <h2 className="text-4xl font-bold text-secondary mb-12 text-center animate-fade-in">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
