@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="container px-4 py-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl animate-slide-up">
           <img
-            src="src/components/images/photo-portfolio.jpg"
+            src="images/photo-portfolio.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
