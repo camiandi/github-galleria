@@ -42,11 +42,9 @@ const Projects = () => {
       title: "Eryantis",
       description: "JAVA based strategic board game implementation",
       githubUrl: "https://github.com/example/eryantis",
-      //youtubeUrl: "https://github.com/camiandi/ingsw2022-AM35",
+      youtubeUrl: "https://github.com/camiandi/ingsw2022-AM35",
       image: "https://raw.githubusercontent.com/camiandi/ingsw2022-AM35/refs/heads/master/src/main/resource/Graphics/Background/EriantysMenu.jpeg",
-      technologies: ["Java", "Maven", "Game Development", "Strategy Games"],
-      hideYoutube: true,
-
+      technologies: ["Java", "AI", "Game Development", "Strategy Games"],
     },
   ];
 
