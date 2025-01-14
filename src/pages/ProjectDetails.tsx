@@ -107,7 +107,7 @@ const ProjectDetails = () => {
           <h1 className="text-3xl font-bold text-[#8B5CF6] mb-4">{project.title}</h1>
           <p className="text-gray-700 mb-6">{project.fullDescription}</p>
           
-          {'videoUrl' in project && typeof project.videoUrl === 'string' && (
+          {'videoUrl' in project && project.videoUrl && (
             <div className="mb-8">
               <h2 className="text-xl font-semibold text-[#8B5CF6] mb-4">Project Demo</h2>
               <div className="aspect-w-16 aspect-h-9">
