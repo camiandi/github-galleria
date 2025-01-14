@@ -52,8 +52,8 @@ const ProjectDetails = () => {
         "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
       ]
     },
-    "Eryantis": {
-      title: "Eryantis",
+    "Eriantys": {
+      title: "Eriantys",
       description: "A strategic board game implementation with advanced AI gameplay",
       technologies: ["Java", "AI", "Game Development", "Strategy Games"],
       fullDescription: "A digital implementation of a strategic board game featuring advanced AI opponents. The project demonstrates software architecture design, AI algorithm implementation, and game development principles.",
