@@ -39,7 +39,7 @@ const Projects = () => {
       hideGithub: true,
     },
     {
-      title: "Eryantis",
+      title: "Eriantys",
       description: "JAVA based strategic board game implementation",
       githubUrl: "https://github.com/example/eryantis",
       //youtubeUrl: "https://github.com/camiandi/ingsw2022-AM35",
