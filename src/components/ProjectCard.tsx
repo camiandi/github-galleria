@@ -7,14 +7,13 @@ import { useNavigate } from "react-router-dom";
 interface ProjectCardProps {
   title: string;
   description: string;
-  githubUrl?: string;
-  youtubeUrl?: string;
-  Url?: string;
+  githubUrl: string;
+  youtubeUrl: string;
   image: string;
   technologies: string[];
 }
 
-const ProjectCard = ({ title, description, githubUrl, youtubeUrl, Url, image, technologies }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, githubUrl, youtubeUrl, image, technologies }: ProjectCardProps) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -71,15 +70,6 @@ const ProjectCard = ({ title, description, githubUrl, youtubeUrl, Url, image, te
             onClick={(e) => e.stopPropagation()}
           >
             <Youtube className="h-6 w-6" />
-            </a>
-            <a
-            href={Url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-red-500 transition-colors"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <ScrollText className="h-6 w-6" />
           </a>
         </div>
       </CardContent>

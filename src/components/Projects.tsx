@@ -14,6 +14,8 @@ const Projects = () => {
     {
       title: "Bachelor Pad - 3D Modeling",
       description: "3D Modeling of a Bachelor Pad \n Blender-based Final Team Project of the Polytechnic of Turin Computer Graphics course",
+      githubUrl: "https://github.com/camiandi/VR-Footystick",
+      youtubeUrl: "https://youtu.be/jOG9e1Z9YjE",
       image: "src/components/images/RenderingScena2.png",
       technologies: ["Unity", "C#", "Game Development", "3D Animation"],
     },
@@ -22,7 +24,6 @@ const Projects = () => {
       description: "Creation of Your Own 3D Key for Distributed Authentication in the Metaverse",
       githubUrl: "https://github.com/erikprifti/progetto_IEEE_VR_3DK-Reate",
       youtubeUrl: "https://youtu.be/8aWGNW8Q-gI",
-      Url: "https://ieeexplore.ieee.org/abstract/document/10390314",
       image: "src/components/images/3dkreate_image.png",
       technologies: ["Unity", "C#", "VR Development", "2023 IEEE Gaming, Entertainment, and Media Conference (GEM)"],
     },
