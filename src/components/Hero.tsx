@@ -30,7 +30,8 @@ const Hero = () => {
       <div className="container px-4 py-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl animate-slide-up">
           <img
-            src="https://storage.googleapis.com/gpt-engineer-file-uploads/FE7EdJxkkIbShKmCcyc5mBD2Ckj2/f43f8517-66c5-4f18-bf80-dab3e7f188c0?Expires=1736878436&GoogleAccessId=admin-2%40gpt-engineer-390607.iam.gserviceaccount.com&Signature=yBPdCJA9ssrF7Z89fryhD4Zhg059hdXAlC5vHrJN40yRyLge0Dsiab5M7T3ssC6vZDZiDm2e1O4tGWiIkJHPVrzWu%2F7dbA3tvZK%2BPD2TiSSyG1%2B4TBTK56%2FIPujumDkHaK6R%2F7ZD4vIx6UcYWVfxMNqZc%2BesKWcq4izUhHUA0H64UlqaNHqBjdLTz68FDmYs3L3IetRewRajpJ938fs5t8F8%2ByFABnBI0Y19Uyml6OwJLvgDEt31BVsnpe0SIzLqGypOyhI3RrmCYHcr7g04GB3CwZTIkeXzk5bxj4ByMIv2NfYipFtxacFkK5Z7cP7NGlh5TkvyfGOB5%2BQNT491EA%3D%3D"
+            //rc="https://storage.googleapis.com/gpt-engineer-file-uploads/FE7EdJxkkIbShKmCcyc5mBD2Ckj2/f43f8517-66c5-4f18-bf80-dab3e7f188c0?Expires=1736878436&GoogleAccessId=admin-2%40gpt-engineer-390607.iam.gserviceaccount.com&Signature=yBPdCJA9ssrF7Z89fryhD4Zhg059hdXAlC5vHrJN40yRyLge0Dsiab5M7T3ssC6vZDZiDm2e1O4tGWiIkJHPVrzWu%2F7dbA3tvZK%2BPD2TiSSyG1%2B4TBTK56%2FIPujumDkHaK6R%2F7ZD4vIx6UcYWVfxMNqZc%2BesKWcq4izUhHUA0H64UlqaNHqBjdLTz68FDmYs3L3IetRewRajpJ938fs5t8F8%2ByFABnBI0Y19Uyml6OwJLvgDEt31BVsnpe0SIzLqGypOyhI3RrmCYHcr7g04GB3CwZTIkeXzk5bxj4ByMIv2NfYipFtxacFkK5Z7cP7NGlh5TkvyfGOB5%2BQNT491EA%3D%3D"
+            src="camiandi/github-galleria/src/components/images/photo-portfolio.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
