@@ -8,7 +8,7 @@ const Projects = () => {
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course",
       githubUrl: "https://github.com/camiandi/The-doll-that-chose-to-drive",
       youtubeUrl: "https://youtube.com/watch?v=example1",
-      image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
+      image: "/lovable-uploads/8ddce958-6faa-4a6c-a2e3-1a13a1887f9c.png",
       technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
     },
     {
