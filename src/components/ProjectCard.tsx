@@ -1,31 +1,19 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Star, Youtube, Link } from "lucide-react";
+import { Github, Star, Youtube, ScrollText } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  githubUrl?: string;
-  youtubeUrl?: string;
-  ieeeUrl?: string;
+  githubUrl: string;
+  youtubeUrl: string;
   image: string;
   technologies: string[];
-  hideGithub?: boolean;
-  hideYoutube?: boolean;
 }
 
-const ProjectCard = ({ 
-  title, 
-  description, 
-  githubUrl, 
-  youtubeUrl, 
-  ieeeUrl,
-  image, 
-  technologies,
-  hideGithub,
-  hideYoutube 
-}: ProjectCardProps) => {
+const ProjectCard = ({ title, description, githubUrl, youtubeUrl, image, technologies }: ProjectCardProps) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -34,7 +22,7 @@ const ProjectCard = ({
 
   return (
     <Card 
-      className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-white/10 backdrop-blur-sm hover:scale-105 animate-fade-in cursor-pointer border-2 border-[#8B5CF6]/20"
+      className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-background-dark/80 backdrop-blur-sm hover:scale-105 animate-fade-in cursor-pointer border-2 border-secondary relative min-h-[450px]"
       onClick={handleClick}
     >
       <div className="h-48 overflow-hidden">
@@ -47,8 +35,8 @@ const ProjectCard = ({
       <CardHeader className="space-y-1">
         <CardTitle className="text-xl flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Star className="h-5 w-5 text-[#F97316]" />
-            <span className="text-[#8B5CF6] group-hover:text-[#A78BFA]">{title}</span>
+            <Star className="h-5 w-5 text-accent" />
+            <span className="text-secondary group-hover:text-primary">{title}</span>
           </div>
         </CardTitle>
       </CardHeader>
@@ -58,46 +46,31 @@ const ProjectCard = ({
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 bg-[#2D1F4E] text-[#8B5CF6] rounded-full text-sm font-medium"
+              className="px-2 py-1 bg-background-darker text-secondary rounded-full text-sm font-medium"
             >
               {tech}
             </span>
           ))}
         </div>
-        <div className="flex justify-end space-x-4 mt-4 border-t pt-4 border-[#8B5CF6]/20">
-          {!hideGithub && githubUrl && (
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#D946EF] transition-colors"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Github className="h-6 w-6" />
-            </a>
-          )}
-          {!hideYoutube && youtubeUrl && (
-            <a
-              href={youtubeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-red-500 transition-colors"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Youtube className="h-6 w-6" />
-            </a>
-          )}
-          {ieeeUrl && (
-            <a
-              href={ieeeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-500 transition-colors"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Link className="h-6 w-6" />
-            </a>
-          )}
+        <div className="absolute bottom-4 right-4 flex space-x-4">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-accent transition-colors"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Github className="h-6 w-6" />
+          </a>
+          <a
+            href={youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-red-500 transition-colors"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Youtube className="h-6 w-6" />
+          </a>
         </div>
       </CardContent>
     </Card>

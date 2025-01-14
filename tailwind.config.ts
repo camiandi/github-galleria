@@ -19,9 +19,13 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#0f2442",
-        secondary: "#1a202e",
-        accent: "#2563eb",
+        primary: "#a594f9",
+        secondary: "#9775fa",
+        accent: "#e263f5",
+        background: {
+          dark: "#2a2f3e",
+          darker: "#252933",
+        },
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

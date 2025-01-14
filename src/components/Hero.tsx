@@ -1,9 +1,10 @@
 import React from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-[80vh] relative flex items-center justify-center bg-gradient-to-br from-[#9b87f5] via-[#8B5CF6] to-[#FFDEE2]">
-      <nav className="fixed top-0 right-0 w-full bg-[#9b87f5]/90 backdrop-blur-sm z-50 py-4">
+    <section className="min-h-[80vh] relative flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent">
+      <nav className="fixed top-0 right-0 w-full bg-primary/90 backdrop-blur-sm z-50 py-4">
         <ul className="flex space-x-6 justify-end px-8">
           <li>
             <a href="#about" className="text-white hover:text-white/80 transition-colors font-medium">
@@ -30,8 +31,7 @@ const Hero = () => {
       <div className="container px-4 py-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl animate-slide-up">
           <img
-            //rc="https://storage.googleapis.com/gpt-engineer-file-uploads/FE7EdJxkkIbShKmCcyc5mBD2Ckj2/f43f8517-66c5-4f18-bf80-dab3e7f188c0?Expires=1736878436&GoogleAccessId=admin-2%40gpt-engineer-390607.iam.gserviceaccount.com&Signature=yBPdCJA9ssrF7Z89fryhD4Zhg059hdXAlC5vHrJN40yRyLge0Dsiab5M7T3ssC6vZDZiDm2e1O4tGWiIkJHPVrzWu%2F7dbA3tvZK%2BPD2TiSSyG1%2B4TBTK56%2FIPujumDkHaK6R%2F7ZD4vIx6UcYWVfxMNqZc%2BesKWcq4izUhHUA0H64UlqaNHqBjdLTz68FDmYs3L3IetRewRajpJ938fs5t8F8%2ByFABnBI0Y19Uyml6OwJLvgDEt31BVsnpe0SIzLqGypOyhI3RrmCYHcr7g04GB3CwZTIkeXzk5bxj4ByMIv2NfYipFtxacFkK5Z7cP7NGlh5TkvyfGOB5%2BQNT491EA%3D%3D"
-            src="camiandi/github-galleria/src/components/images/photo-portfolio.jpg"
+            src="/lovable-uploads/f43f8517-66c5-4f18-bf80-dab3e7f188c0.png"
             alt="Profile"
             className="w-full h-full object-cover"
           />
@@ -46,6 +46,30 @@ const Hero = () => {
           <p className="text-lg text-white/80 mb-8 max-w-2xl animate-slide-up">
             Creating immersive digital experiences through code and creativity
           </p>
+          <div className="flex justify-center md:justify-start space-x-6">
+            <a
+              href="https://github.com/camiandi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-white/80 transition-colors"
+            >
+              <Github className="h-6 w-6" />
+            </a>
+            <a
+              href="mailto:your.email@example.com"
+              className="text-white hover:text-white/80 transition-colors"
+            >
+              <Mail className="h-6 w-6" />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-white/80 transition-colors"
+            >
+              <Linkedin className="h-6 w-6" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
