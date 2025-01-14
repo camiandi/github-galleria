@@ -1,45 +1,75 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Star } from "lucide-react";
+import { Github, Star, Youtube } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   githubUrl: string;
-  demoUrl?: string;
+  youtubeUrl: string;
+  image: string;
   technologies: string[];
 }
 
-const ProjectCard = ({ title, description, githubUrl, technologies }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, githubUrl, youtubeUrl, image, technologies }: ProjectCardProps) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/project/${title}`);
+  };
+
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 overflow-hidden bg-white/80 backdrop-blur-sm hover:scale-105 animate-fade-in">
+    <Card 
+      className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-white/10 backdrop-blur-sm hover:scale-105 animate-fade-in cursor-pointer border-2 border-[#8B5CF6]/20"
+      onClick={handleClick}
+    >
+      <div className="h-48 overflow-hidden">
+        <img 
+          src={image} 
+          alt={title} 
+          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
+        />
+      </div>
       <CardHeader className="space-y-1">
         <CardTitle className="text-xl flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Star className="h-5 w-5 text-[#F97316]" />
-            <span className="text-[#8B5CF6]">{title}</span>
+            <span className="text-[#8B5CF6] group-hover:text-[#A78BFA]">{title}</span>
           </div>
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block hover:text-[#D946EF] transition-colors"
-          >
-            <Github className="h-5 w-5" />
-          </a>
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-gray-700 mb-4">{description}</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-gray-300 mb-4">{description}</p>
+        <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 bg-[#E5DEFF] text-[#8B5CF6] rounded-full text-sm font-medium"
+              className="px-2 py-1 bg-[#2D1F4E] text-[#8B5CF6] rounded-full text-sm font-medium"
             >
               {tech}
             </span>
           ))}
+        </div>
+        <div className="flex justify-end space-x-4 mt-4 border-t pt-4 border-[#8B5CF6]/20">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#D946EF] transition-colors"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Github className="h-6 w-6" />
+          </a>
+          <a
+            href={youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-red-500 transition-colors"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Youtube className="h-6 w-6" />
+          </a>
         </div>
       </CardContent>
     </Card>
