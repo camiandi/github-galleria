@@ -1,18 +1,31 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Star, Youtube } from "lucide-react";
+import { Github, Star, Youtube, Link } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  githubUrl: string;
-  youtubeUrl: string;
+  githubUrl?: string;
+  youtubeUrl?: string;
+  ieeeUrl?: string;
   image: string;
   technologies: string[];
+  hideGithub?: boolean;
+  hideYoutube?: boolean;
 }
 
-const ProjectCard = ({ title, description, githubUrl, youtubeUrl, image, technologies }: ProjectCardProps) => {
+const ProjectCard = ({ 
+  title, 
+  description, 
+  githubUrl, 
+  youtubeUrl, 
+  ieeeUrl,
+  image, 
+  technologies,
+  hideGithub,
+  hideYoutube 
+}: ProjectCardProps) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -52,24 +65,39 @@ const ProjectCard = ({ title, description, githubUrl, youtubeUrl, image, technol
           ))}
         </div>
         <div className="flex justify-end space-x-4 mt-4 border-t pt-4 border-[#8B5CF6]/20">
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#D946EF] transition-colors"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <Github className="h-6 w-6" />
-          </a>
-          <a
-            href={youtubeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-red-500 transition-colors"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <Youtube className="h-6 w-6" />
-          </a>
+          {!hideGithub && githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#D946EF] transition-colors"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Github className="h-6 w-6" />
+            </a>
+          )}
+          {!hideYoutube && youtubeUrl && (
+            <a
+              href={youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-red-500 transition-colors"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Youtube className="h-6 w-6" />
+            </a>
+          )}
+          {ieeeUrl && (
+            <a
+              href={ieeeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-blue-500 transition-colors"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Link className="h-6 w-6" />
+            </a>
+          )}
         </div>
       </CardContent>
     </Card>

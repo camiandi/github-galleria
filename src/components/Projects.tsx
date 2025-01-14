@@ -1,39 +1,41 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { Link } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
       title: "The-doll-that-chose-to-drive",
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course",
-      githubUrl: "https://github.com/camiandi/The-doll-that-chose-to-drive",
       youtubeUrl: "https://youtube.com/watch?v=example1",
       image: "/lovable-uploads/8ddce958-6faa-4a6c-a2e3-1a13a1887f9c.png",
       technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
+      hideGithub: true,
     },
     {
-      title: "Unity-Projects",
+      title: "3DK-reate",
       description: "Portfolio of Unity-based games and interactive experiences",
       githubUrl: "https://github.com/camiandiloro/Unity-Projects",
       youtubeUrl: "https://youtube.com/watch?v=example2",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      ieeeUrl: "https://www.ieee.org/",
+      image: "/lovable-uploads/5068a9ad-ada9-4a79-870c-5e9d7c720d88.png",
       technologies: ["Unity", "C#", "Game Development", "3D Animation"],
     },
     {
-      title: "VFX-Portfolio",
+      title: "Bachelor Pad - 3D Modeling",
       description: "Showcase of visual effects and animation projects using industry-standard tools",
-      githubUrl: "https://github.com/camiandiloro/VFX-Portfolio",
-      youtubeUrl: "https://youtube.com/watch?v=example3",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      image: "/lovable-uploads/6334e2ac-bf0e-4ab5-817d-a926b7ea1064.png",
       technologies: ["Blender", "After Effects", "Nuke"],
+      hideGithub: true,
+      hideYoutube: true,
     },
     {
       title: "VR-FootyStick",
       description: "Virtual Reality football training simulation",
-      githubUrl: "https://github.com/camiandiloro/VR-FootyStick",
       youtubeUrl: "https://youtube.com/watch?v=example4",
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
+      image: "/lovable-uploads/1b6536e0-29fd-4eb5-8087-4bf42c73877c.png",
       technologies: ["Unity", "VR Development", "C#", "3D Modeling"],
+      hideGithub: true,
     },
   ];
 
