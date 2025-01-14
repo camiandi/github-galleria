@@ -9,7 +9,7 @@ const ProjectDetails = () => {
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. This project showcases advanced animation techniques and collaborative teamwork in creating a compelling narrative through 3D animation.",
       technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
       fullDescription: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. The project consisted in the replicate 30s of an original video 'CGI Animated Spot HD The Doll that Chose to Drive' by Post23 CGMeetup, exploiting the animation techniques learned in class.\nMy main role was to animate all the characters representing cars as well as managing the lighting of the scenes. Finally, I aid with the animation of the doll in the first two scenes.",
-      videoUrl: "https://www.youtube.com/watch?v=9_VNAn-cQ9M",
+      videoUrl: "https://youtu.be/jXsF-lM_P64",
       images: [
         "/lovable-uploads/8ddce958-6faa-4a6c-a2e3-1a13a1887f9c.png",
         "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
