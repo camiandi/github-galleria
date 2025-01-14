@@ -13,6 +13,7 @@ interface ProjectCardProps {
   technologies: string[];
   hideGithub?: boolean;
   hideYoutube?: boolean;
+  hideIeee?: boolean;
 }
 
 const ProjectCard = ({ 
@@ -24,7 +25,8 @@ const ProjectCard = ({
   image, 
   technologies,
   hideGithub,
-  hideYoutube 
+  hideYoutube,
+  hideIeee
 }: ProjectCardProps) => {
   const navigate = useNavigate();
 
@@ -87,7 +89,7 @@ const ProjectCard = ({
               <Youtube className="h-6 w-6" />
             </a>
           )}
-          {ieeeUrl && (
+          {!hideIeee && ieeeUrl && (
             <a
               href={ieeeUrl}
               target="_blank"
