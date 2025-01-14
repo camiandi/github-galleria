@@ -37,6 +37,14 @@ const Projects = () => {
       technologies: ["Unity", "VR Development", "C#", "3D Modeling"],
       hideGithub: true,
     },
+    {
+      title: "Eryantis",
+      description: "A strategic board game implementation with advanced AI gameplay",
+      githubUrl: "https://github.com/example/eryantis",
+      youtubeUrl: "https://youtube.com/watch?v=example5",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      technologies: ["Java", "AI", "Game Development", "Strategy Games"],
+    },
   ];
 
   return (
