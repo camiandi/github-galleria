@@ -19,12 +19,12 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#9b87f5",
-        secondary: "#8B5CF6",
-        accent: "#D946EF",
+        primary: "#a594f9",
+        secondary: "#9775fa",
+        accent: "#e263f5",
         background: {
-          dark: "#1a1f2e",
-          darker: "#151923",
+          dark: "#2a2f3e",
+          darker: "#252933",
         },
       },
       fontFamily: {
