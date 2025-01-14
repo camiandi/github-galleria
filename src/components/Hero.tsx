@@ -1,10 +1,9 @@
 import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-[80vh] relative flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent">
-      <nav className="fixed top-0 right-0 w-full bg-primary/90 backdrop-blur-sm z-50 py-4">
+    <section className="min-h-[80vh] relative flex items-center justify-center bg-gradient-to-br from-[#9b87f5] via-[#8B5CF6] to-[#FFDEE2]">
+      <nav className="fixed top-0 right-0 w-full bg-[#9b87f5]/90 backdrop-blur-sm z-50 py-4">
         <ul className="flex space-x-6 justify-end px-8">
           <li>
             <a href="#about" className="text-white hover:text-white/80 transition-colors font-medium">
@@ -31,7 +30,7 @@ const Hero = () => {
       <div className="container px-4 py-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl animate-slide-up">
           <img
-            src="/lovable-uploads/f43f8517-66c5-4f18-bf80-dab3e7f188c0.png"
+            src="images/photo-portfolio.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
@@ -46,30 +45,6 @@ const Hero = () => {
           <p className="text-lg text-white/80 mb-8 max-w-2xl animate-slide-up">
             Creating immersive digital experiences through code and creativity
           </p>
-          <div className="flex justify-center md:justify-start space-x-6">
-            <a
-              href="https://github.com/camiandi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-white/80 transition-colors"
-            >
-              <Github className="h-6 w-6" />
-            </a>
-            <a
-              href="mailto:your.email@example.com"
-              className="text-white hover:text-white/80 transition-colors"
-            >
-              <Mail className="h-6 w-6" />
-            </a>
-            <a
-              href="https://linkedin.com/in/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-white/80 transition-colors"
-            >
-              <Linkedin className="h-6 w-6" />
-            </a>
-          </div>
         </div>
       </div>
     </section>

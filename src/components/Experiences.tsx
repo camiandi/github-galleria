@@ -17,18 +17,18 @@ const Experiences = () => {
   ];
 
   return (
-    <section id="experiences" className="py-16 bg-gradient-to-b from-background-darker to-background-dark">
+    <section id="experiences" className="py-16 bg-gradient-to-b from-[#2a1f2e] to-[#1a1f2e]">
       <div className="container px-4">
-        <h2 className="text-4xl font-bold text-secondary mb-12 text-center animate-fade-in">
+        <h2 className="text-4xl font-bold text-[#8B5CF6] mb-12 text-center animate-fade-in">
           Professional Experience
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className="bg-background-dark/50 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow animate-slide-up border border-primary/20"
+              className="bg-white/5 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow animate-slide-up border border-[#8B5CF6]/10"
             >
-              <h3 className="text-xl font-bold text-primary mb-2">{experience.title}</h3>
+              <h3 className="text-xl font-bold text-[#8B5CF6] mb-2">{experience.title}</h3>
               <p className="text-gray-300 font-medium mb-2">{experience.company}</p>
               <p className="text-gray-400 text-sm mb-4">{experience.period}</p>
               <p className="text-gray-300">{experience.description}</p>
