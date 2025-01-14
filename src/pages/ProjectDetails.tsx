@@ -4,12 +4,12 @@ import { useParams, Link } from "react-router-dom";
 const ProjectDetails = () => {
   const { projectId } = useParams();
   const projects = {
-    "The-doll-that-chose-to-drive": {
-      title: "The-doll-that-chose-to-drive",
+    "The Doll That Chose to Drive": {
+      title: "The Doll That Chose to Drive",
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. This project showcases advanced animation techniques and collaborative teamwork in creating a compelling narrative through 3D animation.",
       technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
-      fullDescription: "A captivating animation project that tells the story of a doll who discovers the joy of driving. Created using Blender, this project demonstrates advanced rigging, animation techniques, and storytelling through visual media.",
-      videoUrl: "https://youtube.com/watch?v=example1",
+      fullDescription: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. The project consisted in the replicate 30s of an original video 'CGI Animated Spot HD The Doll that Chose to Drive' by Post23 CGMeetup, exploiting the animation techniques learned in class.\nMy main role was to animate all the characters representing cars as well as managing the lighting of the scenes. Finally, I aid with the animation of the doll in the first two scenes.",
+      videoUrl: "https://youtu.be/jXsF-lM_P64",
       images: [
         "/lovable-uploads/8ddce958-6faa-4a6c-a2e3-1a13a1887f9c.png",
         "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
@@ -33,6 +33,7 @@ const ProjectDetails = () => {
       description: "Showcase of visual effects and animation projects using industry-standard tools",
       technologies: ["Blender", "After Effects", "Nuke"],
       fullDescription: "A comprehensive portfolio of visual effects work, demonstrating proficiency in industry-standard tools and techniques for creating compelling visual effects and animations.",
+      videoUrl: null,
       images: [
         "/lovable-uploads/6334e2ac-bf0e-4ab5-817d-a926b7ea1064.png",
         "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
@@ -56,7 +57,7 @@ const ProjectDetails = () => {
       description: "A strategic board game implementation with advanced AI gameplay",
       technologies: ["Java", "AI", "Game Development", "Strategy Games"],
       fullDescription: "A digital implementation of a strategic board game featuring advanced AI opponents. The project demonstrates software architecture design, AI algorithm implementation, and game development principles.",
-      videoUrl: "https://youtube.com/watch?v=example5",
+      videoUrl: null,
       images: [
         "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
         "https://images.unsplash.com/photo-1518770660439-4636190af475",
@@ -108,7 +109,7 @@ const ProjectDetails = () => {
           <h1 className="text-3xl font-bold text-[#8B5CF6] mb-4">{project.title}</h1>
           <p className="text-gray-700 mb-6">{project.fullDescription}</p>
           
-          {project.videoUrl && (
+          {project.videoUrl!= null && (
             <div className="mb-8">
               <h2 className="text-xl font-semibold text-[#8B5CF6] mb-4">Project Demo</h2>
               <div className="aspect-w-16 aspect-h-9">
