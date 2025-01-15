@@ -8,7 +8,11 @@ const ProjectDetails = () => {
       title: "The Doll That Chose to Drive",
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. This project showcases advanced animation techniques and collaborative teamwork in creating a compelling narrative through 3D animation.",
       technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
-      fullDescription: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. The project consisted in the replicate 30s of an original video 'CGI Animated Spot HD The Doll that Chose to Drive' by Post23 CGMeetup, exploiting the animation techniques learned in class.\nMy main role was to animate all the characters representing cars as well as managing the lighting of the scenes. Finally, I aid with the animation of the doll in the first two scenes.",
+      fullDescription: {
+        overview: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. The project consisted in the replicate 30s of an original video 'CGI Animated Spot HD The Doll that Chose to Drive' by Post23 CGMeetup, exploiting the animation techniques learned in class.\nMy main role was to animate all the characters representing cars as well as managing the lighting of the scenes. Finally, I aid with the animation of the doll in the first two scenes.",
+        process: "",
+        outcome: ""
+      },
       videoUrl: "https://youtu.be/jXsF-lM_P64",
       images: [
         "/lovable-uploads/8ddce958-6faa-4a6c-a2e3-1a13a1887f9c.png",
@@ -20,7 +24,11 @@ const ProjectDetails = () => {
       title: "3DK-reate",
       description: "Portfolio of Unity-based games and interactive experiences",
       technologies: ["Unity", "C#", "Game Development", "3D Animation"],
-      fullDescription: "A collection of interactive games and experiences developed using Unity. These projects showcase various gameplay mechanics, 3D environments, and interactive storytelling techniques.",
+      fullDescription: {
+        overview: "A collection of interactive games and experiences developed using Unity. These projects showcase various gameplay mechanics, 3D environments, and interactive storytelling techniques.",
+        process: "",
+        outcome: ""
+      },
       videoUrl: "https://youtube.com/watch?v=example2",
       images: [
         "/lovable-uploads/5068a9ad-ada9-4a79-870c-5e9d7c720d88.png",
@@ -32,7 +40,11 @@ const ProjectDetails = () => {
       title: "Bachelor Pad - 3D Modeling",
       description: "3D Modeling of a Bachelor Pad \n Blender-based Final Team Project of the Polytechnic of Turin Computer Graphics course",
       technologies: ["Blender", "3D Modeling"],
-      fullDescription: "In this project, our team collaborated to create a detailed 3D room using a variety of modeling techniques. The goal was to design a realistic and immersive environment, incorporating architectural elements, furniture, and environmental props. We utilized Blender for 3D modeling, applying techniques like procedural modeling, UV unwrapping and sculpting to achieve detailed and accurate results.\n\nProcess:\nWe began the project by defining the room's aesthetic through concept sketches and mood boards. Each team member was responsible for different parts of the design, including objects, textures, and layout, ensuring a cohesive final look. We focused on creating realistic materials using [mention texturing tools, e.g., Substance Painter, Photoshop] for wood, fabric, and metal surfaces. For lighting, we applied both natural and artificial sources to enhance the mood and depth of the scene.\n\nOnce all assets were modeled and textured, we proceeded to render the room using Blender Cycles, fine-tuning the settings for the best quality outputs. Our team carefully managed scene composition, light placement, and camera angles to emphasize key design elements.\n\nOutcome:\nThe project successfully demonstrates our team's ability to work together on a complex task, integrating multiple 3D modeling techniques to create a cohesive, realistic scene. The final render captures the depth, textures, and lighting effects, showcasing our technical skills and creativity in environment design. This project was an excellent exercise in 3D modeling, scene composition, and rendering.",
+      fullDescription: {
+        overview: "In this project, our team collaborated to create a detailed 3D room using a variety of modeling techniques. The goal was to design a realistic and immersive environment, incorporating architectural elements, furniture, and environmental props. We utilized Blender for 3D modeling, applying techniques like procedural modeling, UV unwrapping and sculpting to achieve detailed and accurate results.",
+        process: "We began the project by defining the room's aesthetic through concept sketches and mood boards. Each team member was responsible for different parts of the design, including objects, textures, and layout, ensuring a cohesive final look. We focused on creating realistic materials using [mention texturing tools, e.g., Substance Painter, Photoshop] for wood, fabric, and metal surfaces. For lighting, we applied both natural and artificial sources to enhance the mood and depth of the scene.\n\nOnce all assets were modeled and textured, we proceeded to render the room using Blender Cycles, fine-tuning the settings for the best quality outputs. Our team carefully managed scene composition, light placement, and camera angles to emphasize key design elements.",
+        outcome: "The project successfully demonstrates our team's ability to work together on a complex task, integrating multiple 3D modeling techniques to create a cohesive, realistic scene. The final render captures the depth, textures, and lighting effects, showcasing our technical skills and creativity in environment design. This project was an excellent exercise in 3D modeling, scene composition, and rendering."
+      },
       videoUrl: null,
       images: [
         "/lovable-uploads/1cbdc5e6-b824-4fab-962d-08dfd43efcd4.png",
@@ -46,7 +58,11 @@ const ProjectDetails = () => {
       title: "VR-FootyStick",
       description: "Virtual Reality football training simulation",
       technologies: ["Unity", "VR Development", "C#", "3D Modeling"],
-      fullDescription: "An innovative VR application designed to help football players improve their skills through immersive training scenarios. Features realistic physics and customizable training programs.",
+      fullDescription: {
+        overview: "An innovative VR application designed to help football players improve their skills through immersive training scenarios. Features realistic physics and customizable training programs.",
+        process: "",
+        outcome: ""
+      },
       videoUrl: "https://youtube.com/watch?v=example4",
       images: [
         "/lovable-uploads/1b6536e0-29fd-4eb5-8087-4bf42c73877c.png",
@@ -58,7 +74,11 @@ const ProjectDetails = () => {
       title: "Eriantys",
       description: "A strategic board game implementation with advanced AI gameplay",
       technologies: ["Java", "AI", "Game Development", "Strategy Games"],
-      fullDescription: "A digital implementation of a strategic board game featuring advanced AI opponents. The project demonstrates software architecture design, AI algorithm implementation, and game development principles.",
+      fullDescription: {
+        overview: "A digital implementation of a strategic board game featuring advanced AI opponents. The project demonstrates software architecture design, AI algorithm implementation, and game development principles.",
+        process: "",
+        outcome: ""
+      },
       videoUrl: null,
       images: [
         "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
@@ -109,7 +129,23 @@ const ProjectDetails = () => {
         </Link>
         <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
           <h1 className="text-3xl font-bold text-[#8B5CF6] mb-4">{project.title}</h1>
-          <p className="text-gray-700 mb-6">{project.fullDescription}</p>
+          
+          <div className="space-y-6">
+            <section>
+              <h2 className="text-xl font-semibold text-[#8B5CF6] mb-3">Overview</h2>
+              <p className="text-gray-700">{project.fullDescription.overview}</p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-[#8B5CF6] mb-3">Process</h2>
+              <p className="text-gray-700 whitespace-pre-line">{project.fullDescription.process}</p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-[#8B5CF6] mb-3">Outcome</h2>
+              <p className="text-gray-700">{project.fullDescription.outcome}</p>
+            </section>
+          </div>
           
           {project.videoUrl != null && (
             <div className="mb-8">
