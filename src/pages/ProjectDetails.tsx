@@ -12,15 +12,31 @@ const ProjectDetails = () => {
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. This project showcases advanced animation techniques and collaborative teamwork in creating a compelling narrative through 3D animation.",
       technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
       fullDescription: {
-        overview: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. The project consisted in the replicate 30s of an original video 'CGI Animated Spot HD The Doll that Chose to Drive' by Post23 CGMeetup, exploiting the animation techniques learned in class.\nMy main role was to animate all the characters representing cars as well as managing the lighting of the scenes. Finally, I aid with the animation of the doll in the first two scenes.",
-        process: "",
-        outcome: ""
+        overview: "This Blender-based project was developed as part of the Computer Animation course at the Polytechnic of Turin. The task was to replicate 30 seconds of the original video CGI Animated Spot HD 'The Doll that Chose to Drive' by Post23, applying the animation techniques learned in class.",
+        process: "As the primary animator for the car characters, I focused on creating smooth and lifelike movements while managing the lighting for each scene to match the original video's atmosphere. Additionally, I contributed to animating the doll in the first two scenes, collaborating with the team to ensure consistency and quality across the project.",
+        outcome: "The project successfully replicated key moments of the original video, showcasing our ability to apply animation techniques in a collaborative environment. My contributions to character animation and lighting helped enhance the overall realism and aesthetic coherence of the final render.\n"
       },
       videoUrl: "https://youtu.be/jXsF-lM_P64",
       images: [
         "/lovable-uploads/8ddce958-6faa-4a6c-a2e3-1a13a1887f9c.png",
         "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
         "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+      ]
+    },
+    "D-Spnet": {
+      title: "D-Spnet",
+      description: "Portfolio of Unity-based games and interactive experiences",
+      technologies: ["Maya", "Python", "MEL", "Qualoth", "Machine Learning"],
+      fullDescription: {
+        overview: "This project, in collaboration with KAIST, aimed to improve garment reconstruction by addressing the lack of detail in current methods. Building on SPNet and the Garment-Pattern-Generator, both developed at KAIST’s LAVA Lab, we focused on representing intricate features like buttons, collars, hems, and pockets for more realistic digital garment models.",
+        process: "SPNet, a sewing pattern prediction framework, was adapted to include label masks and additional parameter predictions for detailed features. The Garment-Pattern-Generator, originally designed for generating 3D garment datasets, was extended with new templates and parameters to create a synthetic dataset of detailed garments. Autodesk Maya and Qualoth were used to train and evaluate the system by comparing outputs to ground truth patterns and models.",
+        outcome: "The project made progress in reconstructing garments with greater detail, though challenges remain in capturing complex designs. This work provides a foundation for advancing digital garment modeling, with potential applications in fashion and virtual try-ons.\n"
+      },
+      videoUrl: null,
+      images: [
+        "/lovable-uploads/5df63539-d9e4-4cac-bdfa-f7624996730d.png",
+        "https://images.unsplash.com/photo-1518770660439-4636190af475",
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
       ]
     },
     "3DK-reate": {
@@ -46,7 +62,7 @@ const ProjectDetails = () => {
       fullDescription: {
         overview: "In this project, our team collaborated to create a detailed 3D room using a variety of modeling techniques. The goal was to design a realistic and immersive environment, incorporating architectural elements, furniture, and environmental props. We utilized Blender for 3D modeling, applying techniques like procedural modeling, UV unwrapping and sculpting to achieve detailed and accurate results.",
         process: "We began the project by defining the room's aesthetic through concept sketches and mood boards. Each team member was responsible for different parts of the design, including objects, textures, and layout, ensuring a cohesive final look. We focused on creating realistic materials using [mention texturing tools, e.g., Substance Painter, Photoshop] for wood, fabric, and metal surfaces. For lighting, we applied both natural and artificial sources to enhance the mood and depth of the scene.\n\nOnce all assets were modeled and textured, we proceeded to render the room using Blender Cycles, fine-tuning the settings for the best quality outputs. Our team carefully managed scene composition, light placement, and camera angles to emphasize key design elements.",
-        outcome: "The project successfully demonstrates our team's ability to work together on a complex task, integrating multiple 3D modeling techniques to create a cohesive, realistic scene. The final render captures the depth, textures, and lighting effects, showcasing our technical skills and creativity in environment design. This project was an excellent exercise in 3D modeling, scene composition, and rendering."
+        outcome: "The project successfully demonstrates our team's ability to work together on a complex task, integrating multiple 3D modeling techniques to create a cohesive, realistic scene. The final render captures the depth, textures, and lighting effects, showcasing our technical skills and creativity in environment design. This project was an excellent exercise in 3D modeling, scene composition, and rendering.\n"
       },
       videoUrl: null,
       images: [
