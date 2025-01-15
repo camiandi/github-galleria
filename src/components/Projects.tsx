@@ -14,7 +14,7 @@ const Projects = () => {
     },
     {
       title: "D-Spnet",
-      description: "Digital garment simulation and pattern network for automated clothing design",
+      description: "Additional featured 3D Garment reconstrucion and Sewing Pattern prediction framework",
       image: "/lovable-uploads/5df63539-d9e4-4cac-bdfa-f7624996730d.png",
       technologies: ["Maya", "Python", "MEL", "Qualoth", "Machine Learning"],
       hideGithub: true,

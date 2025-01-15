@@ -10,7 +10,7 @@ const ProjectDetails = () => {
     "The Doll That Chose to Drive": {
       title: "The Doll That Chose to Drive",
       description: "Blender-based Final Team Project of the Polytechnic of Turin Computer Animation course. This project showcases advanced animation techniques and collaborative teamwork in creating a compelling narrative through 3D animation.",
-      technologies: ["Blender", "Animation", "3D Modeling", "Team Project"],
+      technologies: ["Blender", "Animation", "3D Modeling"],
       fullDescription: {
         overview: "This Blender-based project was developed as part of the Computer Animation course at the Polytechnic of Turin. The task was to replicate 30 seconds of the original video CGI Animated Spot HD 'The Doll that Chose to Drive' by Post23, applying the animation techniques learned in class.",
         process: "As the primary animator for the car characters, I focused on creating smooth and lifelike movements while managing the lighting for each scene to match the original video's atmosphere. Additionally, I contributed to animating the doll in the first two scenes, collaborating with the team to ensure consistency and quality across the project.",
@@ -25,7 +25,7 @@ const ProjectDetails = () => {
     },
     "D-Spnet": {
       title: "D-Spnet",
-      description: "Portfolio of Unity-based games and interactive experiences",
+      description: "Additional featured 3D Garment reconstrucion and Sewing Pattern prediction framework",
       technologies: ["Maya", "Python", "MEL", "Qualoth", "Machine Learning"],
       fullDescription: {
         overview: "This project, in collaboration with KAIST, aimed to improve garment reconstruction by addressing the lack of detail in current methods. Building on SPNet and the Garment-Pattern-Generator, both developed at KAIST’s LAVA Lab, we focused on representing intricate features like buttons, collars, hems, and pockets for more realistic digital garment models.",
@@ -41,12 +41,12 @@ const ProjectDetails = () => {
     },
     "3DK-reate": {
       title: "3DK-reate",
-      description: "Portfolio of Unity-based games and interactive experiences",
+      description: "Creation of Your Own 3D Key for Distributed Authentication in the Metaverse",
       technologies: ["Unity", "C#", "Game Development", "3D Animation"],
       fullDescription: {
-        overview: "A collection of interactive games and experiences developed using Unity. These projects showcase various gameplay mechanics, 3D environments, and interactive storytelling techniques.",
-        process: "",
-        outcome: ""
+        overview: "This research explores a novel authentication schema for social and immersive Virtual Reality (VR) environments, addressing the need to authenticate users securely while protecting their sensitive data. By leveraging asymmetric cryptography, the proposed approach enables the creation of breakout rooms accessible only to mutually authenticated users, introducing interfaces designed specifically for VR's three-dimensional interaction capabilities.",
+        process: "The schema utilizes asymmetric cryptography, requiring users to generate and insert private keys. To facilitate this in an immersive VR context, we designed and evaluated four distinct interfaces for key creation and insertion. These interfaces were tailored to exploit VR's spatial and interactive nature, enhancing usability and security.",
+        outcome: "The proposed authentication schema demonstrated the potential to enhance security and privacy in VR environments. The exploration of VR-specific interfaces provided insights into the effective integration of cryptographic techniques within immersive settings, paving the way for further advancements in secure and user-friendly authentication in the Metaverse."
       },
       videoUrl: "https://youtube.com/watch?v=example2",
       images: [
@@ -91,12 +91,12 @@ const ProjectDetails = () => {
     },
     "Eriantys": {
       title: "Eriantys",
-      description: "A strategic board game implementation with advanced AI gameplay",
-      technologies: ["Java", "AI", "Game Development", "Strategy Games"],
+      description: "A strategic board game JAVA implementation ",
+      technologies: ["Java", "Maven", "Game Development", "Strategy Games"],
       fullDescription: {
-        overview: "A digital implementation of a strategic board game featuring advanced AI opponents. The project demonstrates software architecture design, AI algorithm implementation, and game development principles.",
-        process: "",
-        outcome: ""
+        overview: "This project, part of the Software Engineering course at Polytechnic of Milan, involved implementing the board game Eriantys in Java, featuring both GUI and CLI. It supports multiplayer gameplay, adheres to official rules, and implements all game functionalities.",
+        process: "The development began with UML-based architecture design, refined during implementation. Using JavaFX for the GUI, JUnit for testing, and Maven for build management, the project ensures modularity and robust testing, achieving near-complete code coverage. A custom communication protocol supports socket-based multiplayer functionalit",
+        outcome: "The final implementation delivers a fully functional game with GUI, CLI, and multiplayer features. A single executable JAR ensures easy deployment, highlighting strong design, testing, and implementation skills."
       },
       videoUrl: null,
       images: [
