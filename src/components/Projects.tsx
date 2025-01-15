@@ -13,6 +13,15 @@ const Projects = () => {
       hideGithub: true,
     },
     {
+      title: "D-Spnet",
+      description: "Digital garment simulation and pattern network for automated clothing design",
+      image: "/lovable-uploads/5df63539-d9e4-4cac-bdfa-f7624996730d.png",
+      technologies: ["Maya", "Python", "MEL", "Qualoth", "Machine Learning"],
+      hideGithub: true,
+      hideYoutube: true,
+      ieeeUrl: "https://webthesis.biblio.polito.it/33881/",
+    },
+    {
       title: "3DK-reate",
       description: "Creation of Your Own 3D Key for Distributed Authentication in the Metaverse",
       githubUrl: "https://github.com/erikprifti/progetto_IEEE_VR_3DK-Reate",
@@ -44,14 +53,6 @@ const Projects = () => {
       githubUrl: "https://github.com/example/eryantis",
       image: "https://raw.githubusercontent.com/camiandi/ingsw2022-AM35/refs/heads/master/src/main/resource/Graphics/Background/EriantysMenu.jpeg",
       technologies: ["Java", "Maven", "Game Development", "Strategy Games"],
-      hideYoutube: true,
-    },
-    {
-      title: "D-Spnet",
-      description: "Digital garment simulation and pattern network for automated clothing design",
-      image: "/lovable-uploads/5df63539-d9e4-4cac-bdfa-f7624996730d.png",
-      technologies: ["Maya", "Python", "MEL", "Qualoth", "Machine Learning"],
-      hideGithub: true,
       hideYoutube: true,
     },
   ];
