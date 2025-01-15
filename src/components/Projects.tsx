@@ -42,11 +42,17 @@ const Projects = () => {
       title: "Eriantys",
       description: "JAVA based strategic board game implementation",
       githubUrl: "https://github.com/example/eryantis",
-      //youtubeUrl: "https://github.com/camiandi/ingsw2022-AM35",
       image: "https://raw.githubusercontent.com/camiandi/ingsw2022-AM35/refs/heads/master/src/main/resource/Graphics/Background/EriantysMenu.jpeg",
       technologies: ["Java", "Maven", "Game Development", "Strategy Games"],
       hideYoutube: true,
-
+    },
+    {
+      title: "D-Spnet",
+      description: "Digital garment simulation and pattern network for automated clothing design",
+      image: "/lovable-uploads/5df63539-d9e4-4cac-bdfa-f7624996730d.png",
+      technologies: ["Maya", "Python", "MEL", "Qualoth", "Machine Learning"],
+      hideGithub: true,
+      hideYoutube: true,
     },
   ];
 
