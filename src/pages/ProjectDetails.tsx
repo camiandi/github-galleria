@@ -95,7 +95,7 @@ const ProjectDetails = () => {
       technologies: ["Java", "Maven", "Game Development", "Strategy Games"],
       fullDescription: {
         overview: "This project, part of the Software Engineering course at Polytechnic of Milan, involved implementing the board game Eriantys in Java, featuring both GUI and CLI. It supports multiplayer gameplay, adheres to official rules, and implements all game functionalities.",
-        process: "The development began with UML-based architecture design, refined during implementation. Using JavaFX for the GUI, JUnit for testing, and Maven for build management, the project ensures modularity and robust testing, achieving near-complete code coverage. A custom communication protocol supports socket-based multiplayer functionalit",
+        process: "The development began with UML-based architecture design, refined during implementation. Using JavaFX for the GUI, JUnit for testing, and Maven for build management, the project ensures modularity and robust testing, achieving near-complete code coverage. A custom communication protocol supports socket-based multiplayer functionality",
         outcome: "The final implementation delivers a fully functional game with GUI, CLI, and multiplayer features. A single executable JAR ensures easy deployment, highlighting strong design, testing, and implementation skills."
       },
       videoUrl: null,
