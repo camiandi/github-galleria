@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const projects = {
     "The Doll That Chose to Drive": {
       title: "The Doll That Chose to Drive",
@@ -170,7 +173,8 @@ const ProjectDetails = () => {
                   key={index}
                   src={image}
                   alt={`${project.title} screenshot ${index + 1}`}
-                  className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-48 object-cover"
+                  className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-48 object-cover cursor-pointer"
+                  onClick={() => setSelectedImage(image)}
                 />
               ))}
             </div>
@@ -188,6 +192,17 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
+
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-[90vw] max-h-[90vh] p-0 bg-transparent border-none">
+          <img
+            src={selectedImage || ''}
+            alt="Project detail"
+            className="w-full h-full object-contain"
+            onClick={() => setSelectedImage(null)}
+          />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
