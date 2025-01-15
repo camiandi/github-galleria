@@ -30,14 +30,16 @@ const ProjectDetails = () => {
     },
     "Bachelor Pad - 3D Modeling": {
       title: "Bachelor Pad - 3D Modeling",
-      description: "Showcase of visual effects and animation projects using industry-standard tools",
-      technologies: ["Blender", "After Effects", "Nuke"],
-      fullDescription: "A comprehensive portfolio of visual effects work, demonstrating proficiency in industry-standard tools and techniques for creating compelling visual effects and animations.",
+      description: "3D Modeling of a Bachelor Pad \n Blender-based Final Team Project of the Polytechnic of Turin Computer Graphics course",
+      technologies: ["Blender", "3D Modeling"],
+      fullDescription: "In this project, our team collaborated to create a detailed 3D room using a variety of modeling techniques. The goal was to design a realistic and immersive environment, incorporating architectural elements, furniture, and environmental props. We utilized Blender for 3D modeling, applying techniques like procedural modeling, UV unwrapping and sculpting to achieve detailed and accurate results.\n\nProcess:\nWe began the project by defining the room's aesthetic through concept sketches and mood boards. Each team member was responsible for different parts of the design, including objects, textures, and layout, ensuring a cohesive final look. We focused on creating realistic materials using [mention texturing tools, e.g., Substance Painter, Photoshop] for wood, fabric, and metal surfaces. For lighting, we applied both natural and artificial sources to enhance the mood and depth of the scene.\n\nOnce all assets were modeled and textured, we proceeded to render the room using Blender Cycles, fine-tuning the settings for the best quality outputs. Our team carefully managed scene composition, light placement, and camera angles to emphasize key design elements.\n\nOutcome:\nThe project successfully demonstrates our team's ability to work together on a complex task, integrating multiple 3D modeling techniques to create a cohesive, realistic scene. The final render captures the depth, textures, and lighting effects, showcasing our technical skills and creativity in environment design. This project was an excellent exercise in 3D modeling, scene composition, and rendering.",
       videoUrl: null,
       images: [
-        "/lovable-uploads/6334e2ac-bf0e-4ab5-817d-a926b7ea1064.png",
-        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+        "/lovable-uploads/1cbdc5e6-b824-4fab-962d-08dfd43efcd4.png",
+        "/lovable-uploads/ba1df1ec-eea4-4c8e-bc73-bd40b8b7b81f.png",
+        "/lovable-uploads/312d75f9-ac84-4f98-9de6-c89b791ee307.png",
+        "/lovable-uploads/aeca4cbc-85f1-46b4-ace8-2538ef5a99cd.png",
+        "/lovable-uploads/5a8683b3-056f-4e59-a85d-9916aafe34fb.png"
       ]
     },
     "VR-FootyStick": {
@@ -109,7 +111,7 @@ const ProjectDetails = () => {
           <h1 className="text-3xl font-bold text-[#8B5CF6] mb-4">{project.title}</h1>
           <p className="text-gray-700 mb-6">{project.fullDescription}</p>
           
-          {project.videoUrl!= null && (
+          {project.videoUrl != null && (
             <div className="mb-8">
               <h2 className="text-xl font-semibold text-[#8B5CF6] mb-4">Project Demo</h2>
               <div className="aspect-w-16 aspect-h-9">
